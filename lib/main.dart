@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mysite/MainPage.dart';
 
 import 'Resources.dart';
 
@@ -17,7 +18,8 @@ class MyAppState extends State<MyApp> {
       title: Strings.JOE_ACOSTA,
       theme: ThemeData(
           primaryColor: AppColors.PRIMARY_RED,
-          accentColor: AppColors.SECONDARY_GRAY
+          accentColor: AppColors.SECONDARY_GRAY,
+          textTheme: Typography.blackMountainView.apply(fontFamily: 'Open Sans'),
       ),
       home:Scaffold(
         appBar: AppBar(
@@ -48,18 +50,7 @@ class MyAppState extends State<MyApp> {
             )
           ],
         ),
-        body: Container(
-          child: Container(
-            height: 20,
-            color: AppColors.PRIMARY_RED,
-          ),
-
-
-        ),
-        floatingActionButton: FloatingActionButton(
-          tooltip: 'Increment',
-          child: Icon(Icons.add),
-        ), // This trailing comma makes auto-formatting nicer for build methods.
+        body: MainPage()
       )
     );
 
