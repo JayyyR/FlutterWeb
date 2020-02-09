@@ -33,7 +33,7 @@ class ConnectRow extends StatelessWidget {
               width: 40,
             ),
             SizedBox(width: 8),
-            Text(
+            SelectableText(
               data.text,
               style: Theme.of(context).textTheme.subtitle1,
             ),

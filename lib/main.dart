@@ -29,6 +29,18 @@ class MyAppState extends State<MyApp> {
               child: Padding(
                 padding: EdgeInsets.all(2.0),
                 child: FlatButton(
+                  child: Text("About"),
+                  textColor: Colors.white,
+                  onPressed: () {
+
+                  },
+                ),
+              ),
+            ),
+            Center(
+              child: Padding(
+                padding: EdgeInsets.all(2.0),
+                child: FlatButton(
                   child: Text("Experience"),
                   textColor: Colors.white,
                   onPressed: () {},
@@ -40,6 +52,16 @@ class MyAppState extends State<MyApp> {
                 padding: EdgeInsets.all(2.0),
                 child: FlatButton(
                   child: Text("Projects"),
+                  textColor: Colors.white,
+                  onPressed: () {},
+                ),
+              ),
+            ),
+            Center(
+              child: Padding(
+                padding: EdgeInsets.all(2.0),
+                child: FlatButton(
+                  child: Text("Connect"),
                   textColor: Colors.white,
                   onPressed: () {},
                 ),
