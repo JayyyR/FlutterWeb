@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mysite/ProjectCardsRow.dart';
 
 import 'ExperienceCard.dart';
 import 'Header.dart';
@@ -91,42 +92,48 @@ class MainPage extends StatelessWidget {
                     childAspectRatio: .6,
                     maxCrossAxisExtent: 250,
                     children: <Widget>[
-                      Card(
-                        // This ensures that the Card's children are clipped correctly.
-                        clipBehavior: Clip.antiAlias,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              mainAxisSize: MainAxisSize.max,
-                              children: <Widget>[
-                                Expanded(
-                                  child: Image.asset(
-                                    "images/joe_pic.jpg",
-                                    fit: BoxFit.fill,
-                                  ),
-                                )
-                              ],
-                            ),
-                            Padding(
-                                padding:
-                                    const EdgeInsets.fromLTRB(16, 16, 16, 16),
-                                child: DefaultTextStyle(
-                                    softWrap: false,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: Theme.of(context).textTheme.subtitle1,
-                                    child: SelectableText(
-                                      "proj des ription descriptionde scriptionde scription",
-                                    ),
-                                )
-                            )
-                          ],
+                      ProjectCard(
+                        data: ProjectCardData(
+                          title: "Ugly Weather",
+                          description: "Description",
+                          image: "images/ugly_weather.png"
                         ),
                       ),
-                      Card(
-                          // This ensures that the Card's children are clipped correctly.
-                          clipBehavior: Clip.antiAlias,
-                          child: Text("Hi")),
+                      ProjectCard(
+                        data: ProjectCardData(
+                            title: "Simple Fragments",
+                            description: "Description",
+                            image: "images/github.png"
+                        ),
+                      ),
+                      ProjectCard(
+                        data: ProjectCardData(
+                            title: "Plexpy Monitor",
+                            description: "Description",
+                            image: "images/plex.png"
+                        ),
+                      ),
+                      ProjectCard(
+                        data: ProjectCardData(
+                            title: "OkCupid",
+                            description: "Description",
+                            image: "images/okc_app.jpg"
+                        ),
+                      ),
+                      ProjectCard(
+                        data: ProjectCardData(
+                            title: "Buff Buddy",
+                            description: "Description",
+                            image: "images/buffbuddy.jpg"
+                        ),
+                      ),
+                      ProjectCard(
+                        data: ProjectCardData(
+                            title: "Epic Rover",
+                            description: "Description",
+                            image: "images/epic_app.jpg"
+                        ),
+                      ),
                     ],
                   ),
                   SizedBox(height: 32),
