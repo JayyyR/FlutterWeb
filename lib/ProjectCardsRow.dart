@@ -2,13 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mysite/Resources.dart';
 
-class ExperienceCard extends StatelessWidget {
-  const ExperienceCard({
+class ProjectCard extends StatelessWidget {
+  const ProjectCard({
     Key key,
     this.data,
   }) : super(key: key);
 
-  final ExperienceCardData data;
+  final ProjectCardData data;
 
   @override
   Widget build(BuildContext context) {
@@ -83,8 +83,8 @@ class ExperienceCard extends StatelessWidget {
   }
 }
 
-class ExperienceCardData {
-  ExperienceCardData(
+class ProjectCardData {
+  ProjectCardData(
       {this.image,
       this.title,
       this.location,

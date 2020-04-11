@@ -17,7 +17,7 @@ class MyAppState extends State<MyApp> {
     return MaterialApp(
       title: Strings.JOE_ACOSTA,
       theme: ThemeData(
-          primaryColor: AppColors.PRIMARY_RED,
+          primaryColor: AppColors.PRIMARY_GRAY,
           accentColor: AppColors.SECONDARY_GRAY,
           textTheme: Typography.blackMountainView.apply(fontFamily: 'Open Sans'),
       ),

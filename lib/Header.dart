@@ -35,11 +35,11 @@ class Header extends StatelessWidget {
                     ? Theme.of(context)
                     .textTheme
                     .headline4
-                    .apply(color: AppColors.PRIMARY_RED)
+                    .apply(color: AppColors.PRIMARY_GRAY)
                     : Theme.of(context)
                     .textTheme
                     .headline3
-                    .apply(color: AppColors.PRIMARY_RED),
+                    .apply(color: AppColors.PRIMARY_GRAY),
               ),
               SelectableText(
                 'Engineering Manager  •  Software Engineer',
