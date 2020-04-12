@@ -45,6 +45,36 @@ class Strings {
       " I helped with user recruiting, bug bashing, and automating processes. "
       "I also initiated, programmed, and designed a prototype Android application on a team of two.";
 
+
+
+  static const UGLY_WEATHER_TITLE = "Ugly Weather";
+  static const UGLY_WEATHER_DESCRIPTION = "A basic weather app with hand-drawn graphics.";
+
+  static const SIMPLE_FRAGMENTS_TITLE = "SimpleFragments";
+  static const SIMPLE_FRAGMENTS_DESCRIPTION = "A library aimed at making flexible navigation easy on Android.";
+
+  static const PLEXPY_MONITOR_TITLE = "PlexPy Monitor";
+  static const PLEXPY_MONITOR_DESCRIPTION = "App I started building for monitoring stats for your Plex Server.";
+
+  static const BUFF_BUDDY_TITLE = "Buff Buddy";
+  static const BUFF_BUDDY_DESCRIPTION = "This is a workout tracker app I developed in my spare time.";
+
+  static const PANCAKESONPLATES_TITLE = "PancakesOnPlates";
+  static const PANCAKESONPLATES_DESCRIPTION = "PancakesOnPlates is a View-based navigation library for Android I worked on.";
+
+  static const GIFJAM_TITLE = "GifJam";
+  static const GIFJAM_DESCRIPTION = "My teammate and I came in second place in the TribeHacks 2014 Hackathon for GifJam.";
+
+  static const MARSH_MATT_TITLE = "MarshMallow Matt";
+  static const MARSH_MATT_DESCRIPTION = "This is a simple game I developed and published in College in 2014.";
+
+  static const CALORIE_COUNTER_TITLE = "Daily Calorie Counter";
+  static const CALORIE_COUNTER_DESCRIPTION = "Flutter app I built for counting daily calories.";
+
+  static const WEBSITE_TITLE = "This Site";
+  static const WEBSITE_DESCRIPTION = "I built this site using Flutter for Web.";
+
+
 }
 
 class AppColors {

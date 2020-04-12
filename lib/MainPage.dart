@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mysite/ProjectCardsRow.dart';
+import 'package:mysite/ProjectCard.dart';
 
 import 'ExperienceCard.dart';
 import 'Header.dart';
@@ -89,50 +89,70 @@ class MainPage extends StatelessWidget {
                   SizedBox(height: 16),
                   GridView.extent(
                     shrinkWrap: true,
-                    childAspectRatio: .6,
+                    childAspectRatio: .5,
                     maxCrossAxisExtent: 250,
                     children: <Widget>[
                       ProjectCard(
                         data: ProjectCardData(
-                          title: "Ugly Weather",
-                          description: "Description",
-                          image: "images/ugly_weather.png"
-                        ),
+                            title: Strings.WEBSITE_TITLE,
+                            description: Strings.WEBSITE_DESCRIPTION,
+                            image: "images/flutter.png"),
                       ),
                       ProjectCard(
                         data: ProjectCardData(
-                            title: "Simple Fragments",
-                            description: "Description",
-                            image: "images/github.png"
-                        ),
+                            title: Strings.CALORIE_COUNTER_TITLE,
+                            description: Strings.CALORIE_COUNTER_DESCRIPTION,
+                            image: "images/calorie_counter.jpg",
+                            urlToLoad: "https://play.google.com/store/apps/details?id=com.joeracosta.caloriecounter"),
                       ),
                       ProjectCard(
                         data: ProjectCardData(
-                            title: "Plexpy Monitor",
-                            description: "Description",
-                            image: "images/plex.png"
-                        ),
+                            title: Strings.UGLY_WEATHER_TITLE,
+                            description: Strings.UGLY_WEATHER_DESCRIPTION,
+                            image: "images/ugly_weather.png",
+                            urlToLoad: "https://play.google.com/store/apps/details?id=com.joeracosta.uglyweather"),
                       ),
                       ProjectCard(
                         data: ProjectCardData(
-                            title: "OkCupid",
-                            description: "Description",
-                            image: "images/okc_app.jpg"
-                        ),
+                            title: Strings.SIMPLE_FRAGMENTS_TITLE,
+                            description: Strings.SIMPLE_FRAGMENTS_DESCRIPTION,
+                            image: "images/github.png",
+                            urlToLoad: "https://github.com/JayyyR/SimpleFragments"),
                       ),
                       ProjectCard(
                         data: ProjectCardData(
-                            title: "Buff Buddy",
-                            description: "Description",
-                            image: "images/buffbuddy.jpg"
-                        ),
+                            title: Strings.PLEXPY_MONITOR_TITLE,
+                            description: Strings.PLEXPY_MONITOR_DESCRIPTION,
+                            image: "images/plex.png",
+                            urlToLoad: "https://github.com/JayyyR/PlexPyMonitor"),
                       ),
                       ProjectCard(
                         data: ProjectCardData(
-                            title: "Epic Rover",
-                            description: "Description",
-                            image: "images/epic_app.jpg"
-                        ),
+                            title: Strings.BUFF_BUDDY_TITLE,
+                            description: Strings.BUFF_BUDDY_DESCRIPTION,
+                            image: "images/buffbuddy.jpg",
+                            urlToLoad: "https://play.google.com/store/apps/details?id=com.jayr.buffbuddy"),
+                      ),
+                      ProjectCard(
+                        data: ProjectCardData(
+                            title: Strings.PANCAKESONPLATES_TITLE,
+                            description: Strings.PANCAKESONPLATES_DESCRIPTION,
+                            image: "images/github.png",
+                            urlToLoad: "https://github.com/JayyyR/PancakesOnPlates"),
+                      ),
+                      ProjectCard(
+                        data: ProjectCardData(
+                            title: Strings.GIFJAM_TITLE,
+                            description: Strings.GIFJAM_DESCRIPTION,
+                            image: "images/tribehacks.jpg",
+                            urlToLoad: "https://www.youtube.com/watch?v=RPH5ekb9biw"),
+                      ),
+                      ProjectCard(
+                        data: ProjectCardData(
+                            title: Strings.MARSH_MATT_TITLE,
+                            description: Strings.MARSH_MATT_DESCRIPTION,
+                            image: "images/marshmallow_matt.jpg",
+                            urlToLoad: "https://play.google.com/store/apps/details?id=com.jr.matt"),
                       ),
                     ],
                   ),
