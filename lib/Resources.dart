@@ -74,6 +74,15 @@ class Strings {
   static const WEBSITE_TITLE = "This Site";
   static const WEBSITE_DESCRIPTION = "I built this site using Flutter for Web.";
 
+  static const WILLIAM_AND_MARY = "College of William & Mary";
+  static const WILLIAM_AND_MARY_DATES = "August 2010 - May 2014";
+  static const WILLIAM_AND_MARY_DESCRIPTION = "Major in Computer Science";
+
+
+  static const WM_BUSINESS = "W&M Mason School of Business";
+  static const WM_BUSINESS_DATES = "August 2012 - May 2014";
+  static const WM_BUSINESS_DESCRIPTION = "Minor in Process Management and Consulting";
+
 
 }
 

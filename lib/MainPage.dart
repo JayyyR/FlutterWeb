@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mysite/EducationCard.dart';
 import 'package:mysite/ProjectCard.dart';
 
 import 'ExperienceCard.dart';
@@ -96,7 +97,8 @@ class MainPage extends StatelessWidget {
                         data: ProjectCardData(
                             title: Strings.WEBSITE_TITLE,
                             description: Strings.WEBSITE_DESCRIPTION,
-                            image: "images/flutter.png"),
+                            image: "images/flutter.png",
+                            urlToLoad: "https://github.com/JayyyR/FlutterWeb"),
                       ),
                       ProjectCard(
                         data: ProjectCardData(
@@ -155,6 +157,32 @@ class MainPage extends StatelessWidget {
                             urlToLoad: "https://play.google.com/store/apps/details?id=com.jr.matt"),
                       ),
                     ],
+                  ),
+                  SizedBox(height: 32),
+                  Text(
+                    'Education',
+                    style: Theme.of(context)
+                        .textTheme
+                        .headline4
+                        .apply(color: AppColors.PRIMARY_GRAY),
+                  ),
+                  SizedBox(height: 16),
+                  EducationCard(
+                    data: EducationCardData(
+                      image: "images/college_wm.png",
+                      title: Strings.WILLIAM_AND_MARY,
+                      dateString: Strings.WILLIAM_AND_MARY_DATES,
+                      description: Strings.WILLIAM_AND_MARY_DESCRIPTION
+                    ),
+                  ),
+                  SizedBox(height: 12),
+                  EducationCard(
+                    data: EducationCardData(
+                        image: "images/mason_school.png",
+                        title: Strings.WM_BUSINESS,
+                        dateString: Strings.WM_BUSINESS_DATES,
+                        description: Strings.WM_BUSINESS_DESCRIPTION
+                    ),
                   ),
                   SizedBox(height: 32),
                   Text(
