@@ -1,5 +1,7 @@
 import 'dart:ui';
 
+import 'package:flutter/cupertino.dart';
+
 class Strings {
   static const JOE_ACOSTA = "Joe Acosta";
   static const ABOUT_DESC = "Hey there, I'm Joe. I'm an Engineering Manager & Software Developer specializing in "
@@ -82,7 +84,6 @@ class Strings {
   static const WM_BUSINESS = "W&M Mason School of Business";
   static const WM_BUSINESS_DATES = "August 2012 - May 2014";
   static const WM_BUSINESS_DESCRIPTION = "Minor in Process Management and Consulting";
-
 
 }
 

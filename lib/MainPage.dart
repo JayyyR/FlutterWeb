@@ -8,6 +8,23 @@ import 'Resources.dart';
 import 'ConnectRow.dart';
 
 class MainPage extends StatelessWidget {
+
+  const MainPage({
+    Key key,
+    this.aboutKey,
+    this.experienceKey,
+    this.projectsKey,
+    this.educationKey,
+    this.connectKey,
+  }) : super(key: key);
+
+
+  final GlobalKey aboutKey;
+  final GlobalKey experienceKey;
+  final GlobalKey projectsKey;
+  final GlobalKey educationKey;
+  final GlobalKey connectKey;
+
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -24,6 +41,7 @@ class MainPage extends StatelessWidget {
                   Divider(height: 32),
                   Text(
                     'About',
+                    key: aboutKey,
                     style: Theme.of(context)
                         .textTheme
                         .headline4
@@ -36,6 +54,7 @@ class MainPage extends StatelessWidget {
                   ),
                   SizedBox(height: 32),
                   Text('Experience',
+                      key: experienceKey,
                       style: Theme.of(context)
                           .textTheme
                           .headline4
@@ -82,6 +101,7 @@ class MainPage extends StatelessWidget {
                   SizedBox(height: 32),
                   Text(
                     'Projects',
+                    key: projectsKey,
                     style: Theme.of(context)
                         .textTheme
                         .headline4
@@ -161,6 +181,7 @@ class MainPage extends StatelessWidget {
                   SizedBox(height: 32),
                   Text(
                     'Education',
+                    key: educationKey,
                     style: Theme.of(context)
                         .textTheme
                         .headline4
@@ -187,6 +208,7 @@ class MainPage extends StatelessWidget {
                   SizedBox(height: 32),
                   Text(
                     'Connect',
+                    key: connectKey,
                     style: Theme.of(context)
                         .textTheme
                         .headline4

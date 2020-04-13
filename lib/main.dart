@@ -12,6 +12,12 @@ class MyApp extends StatefulWidget {
 
 class MyAppState extends State<MyApp> {
 
+  final aboutKey = GlobalKey();
+  final experienceKey = GlobalKey();
+  final projectsKey = GlobalKey();
+  final educationKey = GlobalKey();
+  final connectKey = GlobalKey();
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,7 +38,7 @@ class MyAppState extends State<MyApp> {
                   child: Text("About"),
                   textColor: Colors.white,
                   onPressed: () {
-
+                    Scrollable.ensureVisible(aboutKey.currentContext);
                   },
                 ),
               ),
@@ -43,7 +49,8 @@ class MyAppState extends State<MyApp> {
                 child: FlatButton(
                   child: Text("Experience"),
                   textColor: Colors.white,
-                  onPressed: () {},
+                  onPressed: () {
+                    Scrollable.ensureVisible(experienceKey.currentContext);},
                 ),
               ),
             ),
@@ -53,7 +60,19 @@ class MyAppState extends State<MyApp> {
                 child: FlatButton(
                   child: Text("Projects"),
                   textColor: Colors.white,
-                  onPressed: () {},
+                  onPressed: () {
+                    Scrollable.ensureVisible(projectsKey.currentContext);},
+                ),
+              ),
+            ),
+            Center(
+              child: Padding(
+                padding: EdgeInsets.all(2.0),
+                child: FlatButton(
+                  child: Text("Education"),
+                  textColor: Colors.white,
+                  onPressed: () {
+                    Scrollable.ensureVisible(educationKey.currentContext);},
                 ),
               ),
             ),
@@ -63,7 +82,8 @@ class MyAppState extends State<MyApp> {
                 child: FlatButton(
                   child: Text("Connect"),
                   textColor: Colors.white,
-                  onPressed: () {},
+                  onPressed: () {
+                    Scrollable.ensureVisible(connectKey.currentContext);},
                 ),
               ),
             ),
@@ -72,7 +92,13 @@ class MyAppState extends State<MyApp> {
             )
           ],
         ),
-        body: MainPage()
+        body: MainPage(
+          aboutKey: aboutKey,
+          experienceKey: experienceKey,
+          projectsKey: projectsKey,
+          educationKey: educationKey,
+          connectKey: connectKey,
+        )
       )
     );
 
